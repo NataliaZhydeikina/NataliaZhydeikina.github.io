@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flapy bird</title>
+  <style>
+    body {
+      background: linear-gradient(90deg, #8376d7, #56bda8);
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    div p {
+      color: #fff;
+      font-size: 20px;
+      font-family: sans-serif;
+      text-transform: uppercase;
+    }
+
+    #pause {
+      color: #000;
+      border: 1px solid #000;
+      background-color: transparent;
+      font-size: 25px;
+      font-family: sans-serif;
+      padding: 10px 15px;
+      border-radius: 7px;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p id="score">Score: 0</p>
+    <button type="button" id="pause">pause</button>
+    <p id="best_score">Best score: 0</p>
+  </div>
+  <canvas></canvas>
+  <script src="./script.js"></script>
+</body>
+
+</html>
