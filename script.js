@@ -65,10 +65,17 @@ let pipes = [
   { x: 475, y: -30 },
   { x: 600, y: -10 }
 ];
+let clicked = false;
 
+document.addEventListener("click", function () {
+  clicked = true;
+})
 function countScore() {
   scoreCount++;
   scoreText.innerHTML = "Score: " + scoreCount;
+  if (clicked) {
+    score.play();
+  }
 }
 
 function drawPipes() {
@@ -138,7 +145,7 @@ function draw() {
 setInterval(draw, 10);
 
 function moveUp() {
-  birdY -= 10 * gravity;
+  birdY -= 4 * gravity;
   fly.play();
 }
 
